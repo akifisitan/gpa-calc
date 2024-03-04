@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { calculateSemesterGpa, type Course, formatGpa } from "./gpa-calc-utils";
-	import { Trash2 } from "lucide-svelte";
+	import Trash2 from "lucide-svelte/icons/trash-2";
 	import { Input } from "$lib/components/ui/input";
 	import { Button } from "$lib/components/ui/button";
 	import { fade, fly } from "svelte/transition";
