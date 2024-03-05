@@ -1,22 +1,28 @@
-# create-svelte
+# gpa-calc
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/main/packages/create-svelte).
+An easy-to-use tool that enables Sabanci University students to calculate their semester and overall GPAs on the fly.
 
-## Creating a project
+![Demo Image](https://github.com/akifisitan/gpa-calc/blob/main/gpa-calc.png)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Motivation
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+I wanted a decent interface for calculating future course grades.
 
-# create a new project in my-app
-npm create svelte@latest my-app
-```
+## Features
+
+- Uses the A, A-, B+ ... D, F grading system.
+- Supports multiple profiles.
+- Supports Satisfactory (S), Unsatisfactory (U) grading and repeated courses.
+
+## Built with
+
+- [SvelteKit](https://kit.svelte.dev/)
+- [Tailwind](https://tailwindcss.com/)
+- [shadcn-svelte](https://www.shadcn-svelte.com)
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependencies with `pnpm install`, then start a development server:
 
 ```bash
 npm run dev
@@ -27,12 +33,10 @@ npm run dev -- --open
 
 ## Building
 
-To create a production version of your app:
+Create a production version of the app:
 
 ```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+Preview the production build with `npm run preview`.
