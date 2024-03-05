@@ -17,7 +17,6 @@
 		parseImportedData,
 		formatGpa
 	} from "./gpa-calc-utils";
-	import LightSwitch from "$lib/components/ui/LightSwitch.svelte";
 
 	let profiles: Record<string, any> = {
 		default: { semesters: [[{ name: "", grade: "A", credits: 3 }]] }
@@ -176,7 +175,6 @@
 			variant="outline"
 			class="size-10 p-0"><User /><span class="sr-only">Profile</span></Button
 		>
-		<LightSwitch />
 	</div>
 </header>
 
