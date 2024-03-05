@@ -31,7 +31,7 @@
 	function deleteCourse(index: number) {
 		if (courses.length === 1) {
 			toast.error(
-				"You cannot delete the single remaining course!\nDelete the semester instead"
+				"You cannot delete the single remaining course!\nDelete the semester instead."
 			);
 		} else {
 			courses.splice(index, 1);
@@ -57,7 +57,7 @@
 		</thead>
 		<tbody>
 			{#each courses as course, index}
-				<tr transition:fade={{ delay: 100 * index, duration: 300 }}>
+				<tr>
 					<td
 						><Input
 							class="text-center"
@@ -83,8 +83,8 @@
 						/></td
 					>
 					<td>
-						<Button variant="destructive" on:click={() => deleteCourse(index)}
-							><Trash2 /></Button
+						<Button variant="outline" on:click={() => deleteCourse(index)}
+							><Trash2 /><span class="sr-only">Delete Course</span></Button
 						>
 					</td>
 				</tr>

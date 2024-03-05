@@ -163,7 +163,6 @@ export function parseImportedData(data: string) {
 		}
 		semesterData.push(courseData);
 	}
-	console.log(semesterData);
 	return semesterData;
 }
 
